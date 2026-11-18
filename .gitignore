@@ -1,0 +1,18 @@
+# 密钥与本地配置（含真实 API key，绝不入库）
+.env
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 评测 API 运行日志（按需保留结果 JSON 与报告即可）
+results/job_*.log
+
+# 编辑器/系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

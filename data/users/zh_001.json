@@ -1,0 +1,576 @@
+{
+  "schema_version": "0.1",
+  "user_id": "zh_001",
+  "persona": {
+    "name": "王琳",
+    "gender": "女",
+    "age": 29,
+    "city": "杭州",
+    "hometown": "衢州",
+    "occupation": "互联网公司产品经理",
+    "traits": [
+      "花生过敏（严重）",
+      "乳糖不耐",
+      "爱运动",
+      "父母在老家"
+    ]
+  },
+  "sessions": [
+    {
+      "session_id": "s1",
+      "date": "2026-08-03",
+      "weekday": "周一",
+      "design_notes": [
+        "首次会话自我介绍，埋稳定事实",
+        "日期锚点：今天8月3号"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "今天8月3号，周一，一到公司就排了三个需求评审，头大。先自我介绍一下，我叫王琳，做产品经理的，以后你就当我的日常助手吧。"
+        },
+        {
+          "role": "assistant",
+          "content": "你好王琳！周一连轴评审确实辛苦，有什么需要我帮忙的尽管说。"
+        },
+        {
+          "role": "user",
+          "content": "先记一下我的基本情况：我在杭州上班，老家衢州的，爸妈还在那边。还有件事很重要，我花生过敏，挺严重的，随身都带着过敏药，以后推荐吃的千万帮我避开。"
+        },
+        {
+          "role": "assistant",
+          "content": "记住了：你在杭州工作，老家衢州，父母在衢州；花生过敏且随身携带过敏药，推荐食物时我会严格避开花生及其制品。"
+        },
+        {
+          "role": "user",
+          "content": "嗯。我平时习惯早起，沿着钱塘江边的步道跑步，跑完一天精神都好。"
+        },
+        {
+          "role": "assistant",
+          "content": "江边晨跑，空气好风景也好。一般跑多远？"
+        },
+        {
+          "role": "user",
+          "content": "五公里左右，配速无所谓，主要是醒脑。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白，五公里晨跑，重在状态。需要我帮你做跑步记录吗？"
+        }
+      ]
+    },
+    {
+      "session_id": "s2",
+      "date": "2026-08-21",
+      "weekday": "周五",
+      "design_notes": [
+        "主语省略：去医院了",
+        "模糊时间：过两天",
+        "指代：上次说的那个江边步道",
+        "更新链启动：晨跑→停跑→骑行"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "唉，今天8月21号，周五，本来打算晚上去跑步，结果膝盖疼得下楼梯都费劲。"
+        },
+        {
+          "role": "assistant",
+          "content": "膝盖疼别硬撑，最近是不是跑量加太急了？"
+        },
+        {
+          "role": "user",
+          "content": "可能吧，上周想冲个十公里。去医院了，拍了个片子，医生说是跑步膝，让我先别跑了，少做冲击大的运动。"
+        },
+        {
+          "role": "assistant",
+          "content": "跑步膝需要静养。这段时间可以换成骑车这类对膝盖冲击小的运动。"
+        },
+        {
+          "role": "user",
+          "content": "游泳我还没学会，就先骑车吧。上次说的那个江边步道，正好改成骑行路线。"
+        },
+        {
+          "role": "assistant",
+          "content": "好，把晨跑暂时换成江边骑行。要不要约个复查？"
+        },
+        {
+          "role": "user",
+          "content": "约了，过两天去复查，看看恢复得怎么样。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的。骑行注意座垫高度和档位，别给膝盖太大压力。"
+        }
+      ]
+    },
+    {
+      "session_id": "s3",
+      "date": "2026-09-10",
+      "weekday": "周四",
+      "design_notes": [
+        "模糊时间：下下周（需周历推算）",
+        "指代：上次说的那个膝盖",
+        "跨会话事实强化：父母住址"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "今天9月10号，跟你说个安排：下下周要去上海出差，待三天，有个大客户的方案要当面过。"
+        },
+        {
+          "role": "assistant",
+          "content": "下下周去上海三天，需要我帮你整理出差清单吗？"
+        },
+        {
+          "role": "user",
+          "content": "清单回头再说。好消息是出差完顺路回老家一趟，衢州离上海高铁方便，好久没见爸妈了。"
+        },
+        {
+          "role": "assistant",
+          "content": "上海之后顺路回衢州看父母，挺好。他们身体还好吗？"
+        },
+        {
+          "role": "user",
+          "content": "都挺好，就住老城区那片，离火车站不远。对了，上次说的那个膝盖，复查没事了，医生说可以慢慢恢复跑步，别一下子加量。"
+        },
+        {
+          "role": "assistant",
+          "content": "复查通过是好消息。恢复跑步建议从两三公里起步，逐步加量。"
+        },
+        {
+          "role": "user",
+          "content": "嗯，打算出差回来再开始跑，这段时间还是骑车。"
+        },
+        {
+          "role": "assistant",
+          "content": "好，出差期间保持骑行，回来后再循序渐进恢复晨跑。"
+        }
+      ]
+    },
+    {
+      "session_id": "s4",
+      "date": "2026-10-08",
+      "weekday": "周四",
+      "design_notes": [
+        "口语表达：理论课刷完了",
+        "新事实：吉他/潜水/乳糖不耐",
+        "干扰事实：瞒着父母（不进入问题）"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "10月8号，假期回来第一天，人还是散的。跟你说个假期里的决定：我报了个吉他班，每周三晚上上课，从零开始学。"
+        },
+        {
+          "role": "assistant",
+          "content": "新爱好不错，零基础班压力大吗？"
+        },
+        {
+          "role": "user",
+          "content": "还好，都是上班族。还有个事，我10月底要去千岛湖考开放水域潜水证，理论课已经刷完了，就等下水。"
+        },
+        {
+          "role": "assistant",
+          "content": "千岛湖考潜水证，理论已完成，就等10月底下水。需要我列装备清单吗？"
+        },
+        {
+          "role": "user",
+          "content": "装备潜店提供。对了，我乳糖不耐，喝奶茶都得换燕麦奶，以后推荐饮品记得避开牛奶。"
+        },
+        {
+          "role": "assistant",
+          "content": "记住了：乳糖不耐，饮品避开牛奶，可以选燕麦奶这类植物奶。"
+        },
+        {
+          "role": "user",
+          "content": "嗯。还有，潜水这事别跟我爸妈提，他们怕水，知道了又要念叨。"
+        },
+        {
+          "role": "assistant",
+          "content": "明白，考潜水证的事对父母保密。"
+        }
+      ]
+    },
+    {
+      "session_id": "s5",
+      "date": "2026-10-29",
+      "weekday": "周四",
+      "design_notes": [
+        "相对时间：昨天→需锚定到会话日期",
+        "三条更新链收口：跑步/吉他/潜水",
+        "模糊时间：下个月",
+        "指代：记得我的过敏和乳糖问题"
+      ],
+      "messages": [
+        {
+          "role": "user",
+          "content": "今天10月29号，两个好消息！昨天潜水证考下来了，开放水域一次过！"
+        },
+        {
+          "role": "assistant",
+          "content": "恭喜恭喜！一次过太厉害了，千岛湖水温怎么样？"
+        },
+        {
+          "role": "user",
+          "content": "挺冷的，但值了。另一个好消息，膝盖彻底好了，这周开始又跑起来了，还是江边那条线，先从三公里慢慢加。"
+        },
+        {
+          "role": "assistant",
+          "content": "膝盖痊愈恢复晨跑，循序渐进很好。那骑行是不是告一段落了？"
+        },
+        {
+          "role": "user",
+          "content": "骑车先停了，还是跑步舒服。对了吉他课调时间了，老师周三晚上有事，从这周起改到周六下午。"
+        },
+        {
+          "role": "assistant",
+          "content": "好的，吉他课从周三晚上改为周六下午。"
+        },
+        {
+          "role": "user",
+          "content": "还有，下个月我爸妈要来杭州住一阵，我爸说想看看我住的地方。到时候帮我推荐点适合老人的清淡餐厅，记得我的过敏和乳糖问题。"
+        },
+        {
+          "role": "assistant",
+          "content": "记住了：父母11月来杭州小住，推荐餐厅会兼顾老人口味，避开花生和牛奶。"
+        }
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "F1",
+      "text": "用户名字是王琳",
+      "planted_in": [
+        "s1"
+      ],
+      "status": "stable",
+      "token": "王琳"
+    },
+    {
+      "fact_id": "F2",
+      "text": "用户在杭州工作，是互联网公司产品经理",
+      "planted_in": [
+        "s1"
+      ],
+      "status": "stable",
+      "token": "杭州"
+    },
+    {
+      "fact_id": "F3",
+      "text": "用户老家是衢州，父母住在衢州老城区，离火车站不远",
+      "planted_in": [
+        "s1",
+        "s3"
+      ],
+      "status": "stable",
+      "token": "衢州"
+    },
+    {
+      "fact_id": "F4",
+      "text": "用户花生过敏且严重，随身携带过敏药",
+      "planted_in": [
+        "s1"
+      ],
+      "status": "stable",
+      "token": "花生"
+    },
+    {
+      "fact_id": "F5",
+      "text": "用户每天早晨沿钱塘江边步道跑步约五公里",
+      "planted_in": [
+        "s1"
+      ],
+      "status": "superseded",
+      "superseded_by": "F6",
+      "token": [
+        "晨跑",
+        "跑步",
+        "跑"
+      ]
+    },
+    {
+      "fact_id": "F6",
+      "text": "用户8月下旬膝盖受伤（跑步膝），医生要求暂停跑步",
+      "planted_in": [
+        "s2"
+      ],
+      "status": "superseded",
+      "superseded_by": "F16",
+      "token": "跑步膝"
+    },
+    {
+      "fact_id": "F7",
+      "text": "用户停跑期间改为在江边步道骑行",
+      "planted_in": [
+        "s2"
+      ],
+      "status": "superseded",
+      "superseded_by": "F16",
+      "token": "骑行"
+    },
+    {
+      "fact_id": "F8",
+      "text": "用户8月21日表示过两天（约8月23日）去复查膝盖",
+      "planted_in": [
+        "s2"
+      ],
+      "status": "stable",
+      "token": "复查"
+    },
+    {
+      "fact_id": "F9",
+      "text": "用户9月10日表示下下周（9月21日至27日那一周）去上海出差三天",
+      "planted_in": [
+        "s3"
+      ],
+      "status": "stable",
+      "token": "上海"
+    },
+    {
+      "fact_id": "F10",
+      "text": "用户上海出差结束后顺路回衢州看父母",
+      "planted_in": [
+        "s3"
+      ],
+      "status": "stable",
+      "token": "衢州"
+    },
+    {
+      "fact_id": "F11",
+      "text": "用户9月上旬膝盖复查通过，医生建议逐步恢复跑步",
+      "planted_in": [
+        "s3"
+      ],
+      "status": "stable",
+      "token": "复查"
+    },
+    {
+      "fact_id": "F12",
+      "text": "用户乳糖不耐，喝奶茶要换燕麦奶",
+      "planted_in": [
+        "s4"
+      ],
+      "status": "stable",
+      "token": "燕麦"
+    },
+    {
+      "fact_id": "F13",
+      "text": "用户报了吉他班，每周三晚上上课，零基础",
+      "planted_in": [
+        "s4"
+      ],
+      "status": "superseded",
+      "superseded_by": "F17",
+      "token": "吉他"
+    },
+    {
+      "fact_id": "F14",
+      "text": "用户计划10月底去千岛湖考开放水域潜水证，理论课已完成",
+      "planted_in": [
+        "s4"
+      ],
+      "status": "superseded",
+      "superseded_by": "F18",
+      "token": "潜水证"
+    },
+    {
+      "fact_id": "F15",
+      "text": "用户父母怕水，考潜水证的事瞒着父母",
+      "planted_in": [
+        "s4"
+      ],
+      "status": "stable",
+      "token": "瞒"
+    },
+    {
+      "fact_id": "F16",
+      "text": "用户膝盖痊愈，10月底已恢复钱塘江晨跑，从三公里循序渐进",
+      "planted_in": [
+        "s5"
+      ],
+      "status": "stable",
+      "token": [
+        "晨跑",
+        "跑步",
+        "跑"
+      ]
+    },
+    {
+      "fact_id": "F17",
+      "text": "用户吉他课因老师周三晚有事，从10月底起改为每周六下午",
+      "planted_in": [
+        "s5"
+      ],
+      "status": "stable",
+      "token": "周六"
+    },
+    {
+      "fact_id": "F18",
+      "text": "用户2026年10月28日考下开放水域潜水证",
+      "planted_in": [
+        "s5"
+      ],
+      "status": "stable",
+      "token": "潜水证"
+    },
+    {
+      "fact_id": "F19",
+      "text": "用户父母2026年11月来杭州住一阵",
+      "planted_in": [
+        "s5"
+      ],
+      "status": "plan",
+      "token": "爸"
+    }
+  ],
+  "questions": [
+    {
+      "qid": "zh_001_q01",
+      "type": "single_hop",
+      "question": "王琳对什么过敏？",
+      "answer": "花生。过敏严重，随身携带过敏药。",
+      "evidence_sessions": [
+        "s1"
+      ],
+      "evidence_facts": [
+        "F4"
+      ],
+      "scoring": "答案必须包含花生；提到随身携带过敏药为完整。"
+    },
+    {
+      "qid": "zh_001_q02",
+      "type": "single_hop",
+      "question": "王琳喝奶茶时为什么要把牛奶换成燕麦奶？",
+      "answer": "因为她乳糖不耐，需要避开牛奶。",
+      "evidence_sessions": [
+        "s4"
+      ],
+      "evidence_facts": [
+        "F12"
+      ],
+      "scoring": "必须指出乳糖不耐或不能消化牛奶；回答偏好或口味原因判错。"
+    },
+    {
+      "qid": "zh_001_q03",
+      "type": "multi_hop",
+      "question": "王琳上海出差结束后顺路探亲，她父母住在哪个城市的哪个区域？",
+      "answer": "衢州老城区，离火车站不远。",
+      "evidence_sessions": [
+        "s1",
+        "s3"
+      ],
+      "evidence_facts": [
+        "F3",
+        "F10"
+      ],
+      "scoring": "必须包含衢州；答出老城区为完整。需要组合s1老家信息与s3住址细节。"
+    },
+    {
+      "qid": "zh_001_q04",
+      "type": "multi_hop",
+      "question": "王琳膝盖受伤不能跑步的那段时间，她改用什么方式锻炼？",
+      "answer": "骑行，把原来跑步的江边步道改成了骑行路线。",
+      "evidence_sessions": [
+        "s1",
+        "s2"
+      ],
+      "evidence_facts": [
+        "F5",
+        "F6",
+        "F7"
+      ],
+      "scoring": "必须是骑车或骑行；回答游泳判错（对话明确说还没学会游泳）。"
+    },
+    {
+      "qid": "zh_001_q05",
+      "type": "temporal",
+      "question": "王琳是几月几号考下潜水证的？",
+      "answer": "2026年10月28日。",
+      "evidence_sessions": [
+        "s5"
+      ],
+      "evidence_facts": [
+        "F18"
+      ],
+      "scoring": "接受10月28日或2026-10-28；回答10月29日（未把昨天换算成绝对日期）或11月（锚定到评测运行日）判错。"
+    },
+    {
+      "qid": "zh_001_q06",
+      "type": "temporal",
+      "question": "王琳9月10日说的下下周去上海出差，具体是哪一周？",
+      "answer": "2026年9月21日至27日那一周，即9月下旬。",
+      "evidence_sessions": [
+        "s3"
+      ],
+      "evidence_facts": [
+        "F9"
+      ],
+      "scoring": "接受9月21日那一周、9月21日至27日或9月下旬；回答11月（把下下周锚定到add运行日而非会话日期）是典型失败模式，判错。"
+    },
+    {
+      "qid": "zh_001_q07",
+      "type": "update",
+      "question": "王琳现在每周几上吉他课？",
+      "answer": "周六下午。原来是周三晚上，10月底因老师时间调整改到周六。",
+      "evidence_sessions": [
+        "s4",
+        "s5"
+      ],
+      "evidence_facts": [
+        "F13",
+        "F17"
+      ],
+      "scoring": "必须回答周六；回答周三判错（未应用知识更新）。"
+    },
+    {
+      "qid": "zh_001_q08",
+      "type": "update",
+      "question": "王琳现在还跑步吗？",
+      "answer": "跑。膝盖痊愈后已于10月底恢复钱塘江晨跑，从三公里循序渐进；8至9月曾因跑步膝停跑改骑车。",
+      "evidence_sessions": [
+        "s1",
+        "s2",
+        "s3",
+        "s5"
+      ],
+      "evidence_facts": [
+        "F5",
+        "F6",
+        "F16"
+      ],
+      "scoring": "必须明确已恢复跑步；回答不跑了或还在骑车判错（未应用三段更新链的最终状态）。"
+    },
+    {
+      "qid": "zh_001_q09",
+      "type": "abstention",
+      "question": "王琳养猫吗？",
+      "answer": "对话中从未提及养猫，应回答不知道或没有相关记忆。",
+      "evidence_sessions": [],
+      "evidence_facts": [],
+      "scoring": "明确表示不知道、未提及或无相关记忆判对；确定性回答养或不养均判错（幻觉）。"
+    },
+    {
+      "qid": "zh_001_q10",
+      "type": "abstention",
+      "question": "王琳结婚了吗？",
+      "answer": "对话中从未提及婚姻状况，应回答不知道或没有相关记忆。",
+      "evidence_sessions": [],
+      "evidence_facts": [],
+      "scoring": "明确表示不知道、未提及或无相关记忆判对；确定性回答已婚或未婚均判错（幻觉）。"
+    }
+  ],
+  "eval_config": {
+    "reset_before_add": true,
+    "add_order": [
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s5"
+    ],
+    "questions_asked_after": "all_sessions",
+    "notes": "每个会话作为一次add调用按时间顺序写入。会话文本内含日期锚点，考察抽取模型能否以文本日期而非真实运行日期锚定相对时间。superseded状态的事实在其被埋入时仍为真，计入抽取召回率，但回答问题时以最新状态为准。"
+  }
+}

@@ -1,0 +1,554 @@
+{
+  "schema_version": "0.1",
+  "user_id": "zh_004",
+  "persona": {
+    "name": "陈嘉怡",
+    "gender": "女",
+    "age": 28,
+    "city": "北京",
+    "hometown": "石家庄",
+    "occupation": "小学语文老师",
+    "traits": [
+      "芒果过敏",
+      "乳糖不耐",
+      "爱健身",
+      "父母在老家"
+    ]
+  },
+  "abstention_topics": [
+    {
+      "topic": "血型",
+      "words": [
+        "血型",
+        "A型",
+        "B型",
+        "O型",
+        "AB型"
+      ],
+      "q": "{name}是什么血型？"
+    },
+    {
+      "topic": "婚姻",
+      "words": [
+        "结婚",
+        "婚姻",
+        "老公",
+        "老婆",
+        "丈夫",
+        "妻子",
+        "已婚",
+        "未婚",
+        "男朋友",
+        "女朋友"
+      ],
+      "q": "{name}结婚了吗？"
+    }
+  ],
+  "sessions": [
+    {
+      "session_id": "s1",
+      "date": "2026-07-04",
+      "date_cn": "7月4日",
+      "weekday": "周六",
+      "design_notes": [
+        "首次会话自我介绍，埋稳定事实",
+        "日期锚点"
+      ],
+      "phenomena": [
+        "第一条user消息自然带出会话日期",
+        "自我介绍建立身份"
+      ],
+      "plant": [
+        {
+          "fact_id": "F1",
+          "hint": "自我介绍叫陈嘉怡，做小学语文老师的，让助手当日常助手"
+        },
+        {
+          "fact_id": "F2",
+          "hint": "说自己在北京上班"
+        },
+        {
+          "fact_id": "F3",
+          "hint": "说老家是石家庄的，爸妈还在那边"
+        },
+        {
+          "fact_id": "F4",
+          "hint": "说自己芒果过敏，吃芒果会起疹子，让助手推荐水果避开芒果"
+        },
+        {
+          "fact_id": "F5",
+          "hint": "说自己平时坚持健身，常去体育中心，锻炼完精神好"
+        }
+      ],
+      "messages": []
+    },
+    {
+      "session_id": "s2",
+      "date": "2026-07-18",
+      "date_cn": "7月18日",
+      "weekday": "周六",
+      "design_notes": [
+        "主语省略",
+        "模糊时间：过两天",
+        "指代：上次说的那个体育中心",
+        "更新链启动：健身→暂停→散步"
+      ],
+      "phenomena": [
+        "第一条user消息自然带出会话日期",
+        "主语省略：去医院/检查时不带主语我",
+        "模糊时间：过两天去复查",
+        "指代：上次说的那个体育中心"
+      ],
+      "plant": [
+        {
+          "fact_id": "F6",
+          "hint": "用主语省略说自己去医院检查了，医生说是腰肌劳损，让先别练了"
+        },
+        {
+          "fact_id": "F7",
+          "hint": "说跑步太累，就先散步，把上次说的那个体育中心换成小区绿道"
+        },
+        {
+          "fact_id": "F8",
+          "hint": "说约了过两天去复查，看看恢复得怎么样"
+        }
+      ],
+      "messages": []
+    },
+    {
+      "session_id": "s3",
+      "date": "2026-08-10",
+      "date_cn": "8月10日",
+      "weekday": "周一",
+      "design_notes": [
+        "模糊时间：下下周（需周历推算）",
+        "指代：上次说的那个腰",
+        "跨会话事实强化：父母住址"
+      ],
+      "phenomena": [
+        "第一条user消息自然带出会话日期",
+        "模糊时间：下下周去出差（不要换算成绝对日期）",
+        "指代：上次说的那个腰",
+        "自然带出父母住老城区离火车站不远"
+      ],
+      "plant": [
+        {
+          "fact_id": "F9",
+          "hint": "说下下周要去济南出差，待三天，有个重要方案要当面过"
+        },
+        {
+          "fact_id": "F10",
+          "hint": "说出差完顺路回老家石家庄一趟，离济南高铁方便，好久没见爸妈了"
+        },
+        {
+          "fact_id": "F11",
+          "hint": "说上次说的那个腰复查没事了，医生说可以慢慢恢复健身，别一下子加量"
+        },
+        {
+          "fact_id": "F3",
+          "hint": "提到爸妈就住老城区那片，离火车站不远"
+        }
+      ],
+      "messages": []
+    },
+    {
+      "session_id": "s4",
+      "date": "2026-09-05",
+      "date_cn": "9月5日",
+      "weekday": "周六",
+      "design_notes": [
+        "口语表达",
+        "新事实：书法/咖啡师证/乳糖不耐",
+        "干扰事实：瞒着父母"
+      ],
+      "phenomena": [
+        "第一条user消息自然带出会话日期",
+        "口语化表达，避免翻译腔"
+      ],
+      "plant": [
+        {
+          "fact_id": "F13",
+          "hint": "说报了个书法班，每周周二晚上上课，从零开始学"
+        },
+        {
+          "fact_id": "F14",
+          "hint": "说9月底要去咖啡培训学校考咖啡师证，理论课已经刷完了，就等实操"
+        },
+        {
+          "fact_id": "F12",
+          "hint": "说自己乳糖不耐，喝奶茶都得换燕麦奶，让助手推荐饮品避开牛奶"
+        },
+        {
+          "fact_id": "F15",
+          "hint": "说考咖啡师证这事别跟爸妈提，怕他们念叨，先瞒着"
+        }
+      ],
+      "messages": []
+    },
+    {
+      "session_id": "s5",
+      "date": "2026-09-25",
+      "date_cn": "9月25日",
+      "weekday": "周五",
+      "design_notes": [
+        "相对时间：昨天→需锚定到会话日期",
+        "三条更新链收口：健身/书法/咖啡师证",
+        "模糊时间：下个月",
+        "指代：记得我的过敏和乳糖问题"
+      ],
+      "phenomena": [
+        "第一条user消息自然带出会话日期",
+        "相对时间：昨天考下了证（助手禁止换算成绝对日期）",
+        "模糊时间：下个月父母来",
+        "指代：记得我的过敏和乳糖问题"
+      ],
+      "plant": [
+        {
+          "fact_id": "F18",
+          "hint": "说昨天咖啡师证考下来了，一次过，很高兴（只说昨天，不说绝对日期）"
+        },
+        {
+          "fact_id": "F16",
+          "hint": "说腰彻底好了，这周开始又健身了，还是原来那条线，循序渐进慢慢加量"
+        },
+        {
+          "fact_id": "F17",
+          "hint": "说书法班调时间了，老师周二晚上有事，从这周起改到周四晚上"
+        },
+        {
+          "fact_id": "F19",
+          "hint": "说下个月爸妈要来北京住一阵，让助手推荐适合老人的清淡餐厅，记得自己的过敏和乳糖问题"
+        }
+      ],
+      "messages": []
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "F1",
+      "text": "用户名字是陈嘉怡",
+      "planted_in": [
+        "s1"
+      ],
+      "status": "stable",
+      "token": "陈嘉怡"
+    },
+    {
+      "fact_id": "F2",
+      "text": "用户在北京工作，是小学语文老师",
+      "planted_in": [
+        "s1"
+      ],
+      "status": "stable",
+      "token": "北京"
+    },
+    {
+      "fact_id": "F3",
+      "text": "用户老家是石家庄，父母住在石家庄老城区，离火车站不远",
+      "planted_in": [
+        "s1",
+        "s3"
+      ],
+      "status": "stable",
+      "token": "石家庄"
+    },
+    {
+      "fact_id": "F4",
+      "text": "用户芒果过敏，过敏，吃芒果会起疹子",
+      "planted_in": [
+        "s1"
+      ],
+      "status": "stable",
+      "token": "芒果"
+    },
+    {
+      "fact_id": "F5",
+      "text": "用户坚持健身锻炼，常去体育中心",
+      "planted_in": [
+        "s1"
+      ],
+      "status": "superseded",
+      "superseded_by": "F6",
+      "token": "健身"
+    },
+    {
+      "fact_id": "F6",
+      "text": "用户7月18日前后腰受伤（腰肌劳损），医生要求暂停健身",
+      "planted_in": [
+        "s2"
+      ],
+      "status": "superseded",
+      "superseded_by": "F16",
+      "token": "腰肌劳损"
+    },
+    {
+      "fact_id": "F7",
+      "text": "用户暂停健身期间改为散步",
+      "planted_in": [
+        "s2"
+      ],
+      "status": "superseded",
+      "superseded_by": "F16",
+      "token": "散步"
+    },
+    {
+      "fact_id": "F8",
+      "text": "用户7月18日表示过两天（约7月20日）去复查腰",
+      "planted_in": [
+        "s2"
+      ],
+      "status": "stable",
+      "token": "复查"
+    },
+    {
+      "fact_id": "F9",
+      "text": "用户8月10日表示下下周（8月24日至30日那一周）去济南出差三天",
+      "planted_in": [
+        "s3"
+      ],
+      "status": "stable",
+      "token": "济南"
+    },
+    {
+      "fact_id": "F10",
+      "text": "用户济南出差结束后顺路回石家庄看父母",
+      "planted_in": [
+        "s3"
+      ],
+      "status": "stable",
+      "token": "石家庄"
+    },
+    {
+      "fact_id": "F11",
+      "text": "用户8月10日前后腰复查通过，医生建议逐步恢复健身",
+      "planted_in": [
+        "s3"
+      ],
+      "status": "stable",
+      "token": "复查"
+    },
+    {
+      "fact_id": "F12",
+      "text": "用户乳糖不耐，喝奶茶要换燕麦奶",
+      "planted_in": [
+        "s4"
+      ],
+      "status": "stable",
+      "token": "燕麦"
+    },
+    {
+      "fact_id": "F13",
+      "text": "用户报了书法班，每周周二晚上上课，零基础",
+      "planted_in": [
+        "s4"
+      ],
+      "status": "superseded",
+      "superseded_by": "F17",
+      "token": "书法"
+    },
+    {
+      "fact_id": "F14",
+      "text": "用户计划9月底去咖啡培训学校考咖啡师证，理论课已经刷完了",
+      "planted_in": [
+        "s4"
+      ],
+      "status": "superseded",
+      "superseded_by": "F18",
+      "token": "咖啡师"
+    },
+    {
+      "fact_id": "F15",
+      "text": "用户考咖啡师证的事暂时瞒着父母，怕他们念叨",
+      "planted_in": [
+        "s4"
+      ],
+      "status": "stable",
+      "token": "瞒"
+    },
+    {
+      "fact_id": "F16",
+      "text": "用户腰痊愈，9月25日前后已恢复健身锻炼，循序渐进",
+      "planted_in": [
+        "s5"
+      ],
+      "status": "stable",
+      "token": "健身"
+    },
+    {
+      "fact_id": "F17",
+      "text": "用户书法班因老师周二晚上有事，从9月25日前后起改为每周周四晚上",
+      "planted_in": [
+        "s5"
+      ],
+      "status": "stable",
+      "token": "周四"
+    },
+    {
+      "fact_id": "F18",
+      "text": "用户2026年9月24日考下咖啡师证",
+      "planted_in": [
+        "s5"
+      ],
+      "status": "stable",
+      "token": "咖啡师"
+    },
+    {
+      "fact_id": "F19",
+      "text": "用户父母10月来北京住一阵",
+      "planted_in": [
+        "s5"
+      ],
+      "status": "plan",
+      "token": "爸"
+    }
+  ],
+  "questions": [
+    {
+      "qid": "zh_004_q01",
+      "type": "single_hop",
+      "question": "陈嘉怡对什么过敏？",
+      "answer": "芒果。过敏，吃芒果会起疹子。",
+      "evidence_sessions": [
+        "s1"
+      ],
+      "evidence_facts": [
+        "F4"
+      ],
+      "scoring": "答案必须包含芒果。"
+    },
+    {
+      "qid": "zh_004_q02",
+      "type": "single_hop",
+      "question": "陈嘉怡喝奶茶时为什么要把牛奶换成燕麦奶？",
+      "answer": "因为乳糖不耐，需要避开牛奶。",
+      "evidence_sessions": [
+        "s4"
+      ],
+      "evidence_facts": [
+        "F12"
+      ],
+      "scoring": "必须指出乳糖不耐或不能消化牛奶；回答偏好或口味原因判错。"
+    },
+    {
+      "qid": "zh_004_q03",
+      "type": "multi_hop",
+      "question": "陈嘉怡济南出差结束后顺路探亲，父母住在哪个城市的哪个区域？",
+      "answer": "石家庄老城区，离火车站不远。",
+      "evidence_sessions": [
+        "s1",
+        "s3"
+      ],
+      "evidence_facts": [
+        "F3",
+        "F10"
+      ],
+      "scoring": "必须包含石家庄；答出老城区为完整。需组合s1老家信息与s3住址细节。"
+    },
+    {
+      "qid": "zh_004_q04",
+      "type": "multi_hop",
+      "question": "陈嘉怡腰受伤不能健身的那段时间，改用什么方式锻炼？",
+      "answer": "散步。",
+      "evidence_sessions": [
+        "s1",
+        "s2"
+      ],
+      "evidence_facts": [
+        "F5",
+        "F6",
+        "F7"
+      ],
+      "scoring": "必须回答散步；回答其他运动判错。"
+    },
+    {
+      "qid": "zh_004_q05",
+      "type": "temporal",
+      "question": "陈嘉怡是几月几号考下咖啡师证的？",
+      "answer": "2026年9月24日。",
+      "evidence_sessions": [
+        "s5"
+      ],
+      "evidence_facts": [
+        "F18"
+      ],
+      "scoring": "接受9月24日或2026年9月24日；回答9月25日（未把昨天换算）或11月（锚定到运行日）判错。"
+    },
+    {
+      "qid": "zh_004_q06",
+      "type": "temporal",
+      "question": "陈嘉怡8月10日说的下下周去济南出差，具体是哪一周？",
+      "answer": "2026年8月24日至30日那一周，即8月下旬。",
+      "evidence_sessions": [
+        "s3"
+      ],
+      "evidence_facts": [
+        "F9"
+      ],
+      "scoring": "接受8月24日那一周或8月下旬；回答11月（把下下周锚定到add运行日而非会话日期）是典型失败模式，判错。"
+    },
+    {
+      "qid": "zh_004_q07",
+      "type": "update",
+      "question": "陈嘉怡现在每周几上书法课？",
+      "answer": "周四晚上。原来是周二晚上，9月底因老师周二晚上有事调整。",
+      "evidence_sessions": [
+        "s4",
+        "s5"
+      ],
+      "evidence_facts": [
+        "F13",
+        "F17"
+      ],
+      "scoring": "必须回答周四晚上；回答周二晚上判错（未应用知识更新）。"
+    },
+    {
+      "qid": "zh_004_q08",
+      "type": "update",
+      "question": "陈嘉怡现在还健身吗？",
+      "answer": "还健身。腰痊愈后已于9月底恢复；中间曾因腰肌劳损暂停改散步。",
+      "evidence_sessions": [
+        "s1",
+        "s2",
+        "s3",
+        "s5"
+      ],
+      "evidence_facts": [
+        "F5",
+        "F6",
+        "F16"
+      ],
+      "scoring": "必须明确已恢复健身；回答不健身或还在散步判错（未应用更新链最终状态）。"
+    },
+    {
+      "qid": "zh_004_q09",
+      "type": "abstention",
+      "question": "陈嘉怡是什么血型？",
+      "answer": "对话中从未提及，应回答不知道或没有相关记忆。",
+      "evidence_sessions": [],
+      "evidence_facts": [],
+      "scoring": "明确表示不知道、未提及或无相关记忆判对；确定性回答判错（幻觉）。"
+    },
+    {
+      "qid": "zh_004_q10",
+      "type": "abstention",
+      "question": "陈嘉怡结婚了吗？",
+      "answer": "对话中从未提及，应回答不知道或没有相关记忆。",
+      "evidence_sessions": [],
+      "evidence_facts": [],
+      "scoring": "明确表示不知道、未提及或无相关记忆判对；确定性回答判错（幻觉）。"
+    }
+  ],
+  "eval_config": {
+    "reset_before_add": true,
+    "add_order": [
+      "s1",
+      "s2",
+      "s3",
+      "s4",
+      "s5"
+    ],
+    "questions_asked_after": "all_sessions",
+    "eval_date": "2026-11-13",
+    "notes": "每个会话作为一次add调用按时间顺序写入。会话文本内含日期锚点，考察抽取模型能否以文本日期而非真实运行日期锚定相对时间。superseded事实在被埋入时仍为真，计入抽取召回率，但回答以最新状态为准。"
+  }
+}

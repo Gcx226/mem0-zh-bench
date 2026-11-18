@@ -1,0 +1,140 @@
+{
+  "tag": "smoke",
+  "run_at": "2026-11-16T08:52:56.682241+00:00",
+  "config": {
+    "mem0_api_url": "http://localhost:8888",
+    "answer_model": "deepseek-chat",
+    "judge_model": "Qwen/Qwen2.5-72B-Instruct",
+    "top_k": 5,
+    "skip_add": false
+  },
+  "summary": {
+    "users": 1,
+    "extraction_recall": 0.8947,
+    "retrieval_recall_at_5": 1.0,
+    "answer_accuracy": 1.0,
+    "by_type": {
+      "single_hop": {
+        "answer_accuracy": 1.0,
+        "retrieval_recall_at_5": 1.0,
+        "n": 2
+      }
+    }
+  },
+  "users": [
+    {
+      "user_id": "zh_002",
+      "extraction": [
+        {
+          "fact_id": "F1",
+          "covered": true
+        },
+        {
+          "fact_id": "F2",
+          "covered": true
+        },
+        {
+          "fact_id": "F3",
+          "covered": true
+        },
+        {
+          "fact_id": "F4",
+          "covered": true
+        },
+        {
+          "fact_id": "F5",
+          "covered": true
+        },
+        {
+          "fact_id": "F6",
+          "covered": true
+        },
+        {
+          "fact_id": "F7",
+          "covered": true
+        },
+        {
+          "fact_id": "F8",
+          "covered": true
+        },
+        {
+          "fact_id": "F9",
+          "covered": true
+        },
+        {
+          "fact_id": "F10",
+          "covered": true
+        },
+        {
+          "fact_id": "F11",
+          "covered": true
+        },
+        {
+          "fact_id": "F12",
+          "covered": false
+        },
+        {
+          "fact_id": "F13",
+          "covered": true
+        },
+        {
+          "fact_id": "F14",
+          "covered": true
+        },
+        {
+          "fact_id": "F15",
+          "covered": false
+        },
+        {
+          "fact_id": "F16",
+          "covered": true
+        },
+        {
+          "fact_id": "F17",
+          "covered": true
+        },
+        {
+          "fact_id": "F18",
+          "covered": true
+        },
+        {
+          "fact_id": "F19",
+          "covered": true
+        }
+      ],
+      "questions": [
+        {
+          "qid": "zh_002_q01",
+          "type": "single_hop",
+          "recall_at_5": true,
+          "retrieved": [
+            "用户名叫李承泽，是一名产品经理，希望助手作为他的日常助手，协助处理日常事务。",
+            "用户有较严重的花生过敏，随身携带过敏药，明确要求助手在推荐食物时严格避开花生及含花生的食品。",
+            "用户乳糖不耐，喝奶茶都要换成燕麦奶，并要求助手以后推荐饮品时避开牛奶，可以选燕麦奶这类植物奶。",
+            "2026年7月21日（周二）早上，用户因膝盖不适去医院拍了片子，医生诊断为跑步膝，并建议他先暂停跑步。",
+            "用户于2026年8月14日（周五）提到，下下周（约2026年8月24日至30日那一周）要去上海出差三天，有一个重要方案需要当面沟通。"
+          ],
+          "response": "李承泽有较严重的花生过敏，会随身携带过敏药，并要求推荐食物时严格避开花生及含花生的食品。",
+          "correct": true,
+          "judge_reason": "答案包含花生"
+        },
+        {
+          "qid": "zh_002_q02",
+          "type": "single_hop",
+          "recall_at_5": true,
+          "retrieved": [
+            "用户乳糖不耐，喝奶茶都要换成燕麦奶，并要求助手以后推荐饮品时避开牛奶，可以选燕麦奶这类植物奶。",
+            "用户名叫李承泽，是一名产品经理，希望助手作为他的日常助手，协助处理日常事务。",
+            "因跑步膝需要暂停跑步，用户从2026年7月21日起把晨跑改为沿江边步道骑行，作为对膝盖冲击较小的替代运动。",
+            "用户还不会游泳，因此膝盖受伤后没有选择游泳作为康复运动，而是选择了骑车。",
+            "用户打算等上海出差回来后再恢复晨跑，出差期间以及此前这段时间仍以骑车为主要运动。"
+          ],
+          "response": "因为李承泽乳糖不耐，所以喝奶茶时要把牛奶换成燕麦奶。",
+          "correct": true,
+          "judge_reason": "回答中明确指出了乳糖不耐的原因。"
+        }
+      ],
+      "elapsed_sec": 50.4
+    }
+  ]
+}
